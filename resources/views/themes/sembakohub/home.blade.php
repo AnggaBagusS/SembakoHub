@@ -1,4 +1,5 @@
 @extends('themes.sembakohub.layouts.app')
+@include('themes.sembakohub.shared.slider')
 
 @section('content')
 <!-- Popular -->
