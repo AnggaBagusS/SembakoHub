@@ -117,4 +117,12 @@ class Product extends Model
     {
         return self::STOCK_STATUSES[$this->stock_status];
     }
+    public function getStockAttribute()
+    {
+        if (!$this->inventory) {
+            return 0;
+        }
+
+        return $this->inventory->qty;
+    }
 }
